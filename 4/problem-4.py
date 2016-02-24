@@ -15,4 +15,4 @@ if __name__ == '__main__':
         for j in range(100, 999):
             if is_palindromic(i*j):
                 result_list.append(i*j)
-    print(sorted(result_list)[-1])
+    print(max(result_list))

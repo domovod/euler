@@ -6,8 +6,6 @@
 # What is the smallest positive number that is evenly divisible by all of the
 # numbers from 1 to 20?
 
-# Comment: Too slow solution
-
 
 def divisible_by(a, b):
     if b != 0:
@@ -36,7 +34,7 @@ def factorial(n):
 
 if __name__ == '__main__':
     max_divider = 20
-    divisible = range(max_divider, factorial(max_divider)+1)
+    divisible = range(max_divider, factorial(max_divider)+1, max_divider)
     for i in divisible:
         if divider(i, max_divider):
             print('Answer:', i)

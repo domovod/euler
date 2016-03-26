@@ -30,7 +30,7 @@
   (if (<= val acc)
       (if (dividerp val n)
           val
-          (find-div acc (+ val 1) n))))
+          (find-div acc (+ val n) n))))
 
 (defun find-divisible (n)
   (find-div (factorial n) n n))

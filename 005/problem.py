@@ -5,6 +5,7 @@
 # to 10 without any remainder.
 # What is the smallest positive number that is evenly divisible by all of the
 # numbers from 1 to 20?
+from math import factorial
 
 
 def divisible_by(a, b):
@@ -20,16 +21,6 @@ def divider(a, b):
     if divisible_by(a, b):
         return divider(a, b-1)
     return False
-
-
-def fact(n, acc):
-    if n == 0:
-        return acc
-    return fact(n-1, n*acc)
-
-
-def factorial(n):
-    return fact(n, 1)
 
 
 if __name__ == '__main__':
